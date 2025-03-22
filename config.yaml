@@ -1,0 +1,45 @@
+rtsp_url: ''
+resize_width: 1920
+resize_height: 1080
+auto_connect_camera: true
+rtsp_transport: udp
+rtsp_auto_switch: true
+buffer_size: 30
+enable_adaptive_buffer: true
+connection_timeout: 15.0
+frame_timeout: 5.0
+enable_frame_interpolation: true
+adaptive_quality: true
+object_threshold: 1.0
+alert_cooldown: 20
+telegram_bot_token: xxxxxxxxxxxxxxxxxxxxxxxxxxxxJU7k2wx8ZAw
+telegram_chat_id: '-1002495575128'
+telegram_message_thread_id: 2
+yolo_model_path: yolo11n.pt
+use_gpu: true
+yolo_confidence_threshold: 0.25
+classes_of_interest:
+- 0
+- 1
+- 2
+enable_sound_alert: false
+sound_alert_file: alert_sound.mp3
+email_enabled: false
+email_smtp_server: smtp.gmail.com
+email_smtp_port: 587
+email_use_ssl: true
+email_username: ''
+email_password: ''
+email_from: ''
+email_to: ''
+cameras:
+  main:
+    camera_id: main
+    name: Main Camera
+    url: rtsp://admin:dcba123654@192.168.102.15:554/Stream/Channels/101?resolution=1920x1080
+    resize_width: 1920
+    resize_height: 1080
+    buffer_size: 30
+    rtsp_transport: udp
+    enabled: true
+    auto_connect: false
